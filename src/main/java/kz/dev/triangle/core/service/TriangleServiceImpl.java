@@ -17,7 +17,7 @@ public class TriangleServiceImpl implements ITriangleService{
     @Override
     public void saveTriangle(TriangleDTO triangle) {
 
-        log.info("Saving good triangle: {}" + triangle.toString());
+        log.info("!!Saving good triangle: {}" + triangle.toString());
         iTriangleRepository.save(TriangleEntity.builder(
                 triangle.getSide1(),
                 triangle.getSide2(),
